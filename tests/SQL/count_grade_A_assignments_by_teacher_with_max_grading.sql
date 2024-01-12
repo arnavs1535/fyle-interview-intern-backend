@@ -6,3 +6,4 @@ JOIN grades g ON a.assignment_id = g.assignment_id
 WHERE g.grade = 'A'
 GROUP BY t.teacher_id, t.teacher_name
 ORDER BY grade_a_count DESC
+LIMIT 1;
